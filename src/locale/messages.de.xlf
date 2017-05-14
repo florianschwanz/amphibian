@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="66abb23ed9adf4aa03eab3e4b75234d32748e44c" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <target>App funktioniert</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">app works</note>
+      </trans-unit>
+      <trans-unit id="283c607109e04f22d04ee059d90d6083becc6e89" datatype="html">
+        <source>
+          <x id="INTERPOLATION"/>
+        </source>
+        <target>die App funktioniert!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">app works</note>
+      </trans-unit>
+      <trans-unit id="ada15d0099ccf0a54d598a658d7a5d9f95af8fc6" datatype="html">
+        <source>with</source>
+        <target>mit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">with</note>
+      </trans-unit>
+      <trans-unit id="77c065395a3b5344e3a3b2ebc2925ee7a6ecc0be" datatype="html">
+        <source>on a smart TV</source>
+        <target>auf einem Smart TV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">on a smart TV</note>
+      </trans-unit>
+      <trans-unit id="89a348a4c67712d6b63b89ce91ce02b4729e3362" datatype="html">
+        <source>on a desktop</source>
+        <target>auf einem Desktop</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">on a desktop</note>
+      </trans-unit>
+      <trans-unit id="b4b05a16b3c7bb8bf99e629d5b279149a57b9d76" datatype="html">
+        <source>on a tablet</source>
+        <target>auf einem Tablet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">on a tablet</note>
+      </trans-unit>
+      <trans-unit id="55f0c771eddff0ef5cb0912e9871d555ed9f2638" datatype="html">
+        <source>on a mobile device</source>
+        <target>auf einem mobilen Geraet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">C:/Users/flori/git/amphibian/src/app/app.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">on a mobile device</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
