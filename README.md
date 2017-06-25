@@ -49,7 +49,7 @@ For some supported platforms there is a script that can be used to run the appli
 * run the following command to start the web version of the application
 
 ```
-npm start
+npm run start
 ```
 or
 ```
@@ -63,7 +63,7 @@ gradlew start
 * run the following command to start the desktop version of the application
 
 ```
-npm electron-start
+npm run electron-start
 ```
 or
 ```
@@ -78,7 +78,7 @@ gradlew electronStart
 * note: for the Android version to run you need to have Android SDK installed
 
 ```
-npm cordova-android-start
+npm run cordova-android-start
 ```
 or
 ```
