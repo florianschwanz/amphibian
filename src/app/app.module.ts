@@ -5,6 +5,7 @@ import {NgModule} from '@angular/core';
 import {ToolbarComponent} from './view/toolbar/toolbar.component';
 import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
+import {PouchDBService} from './services/pouchdb.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,10 @@ import {HttpClientModule} from '@angular/common/http';
     MatMenuModule,
     MatToolbarModule
   ],
-  providers: [PlatformService],
+  providers: [
+    PlatformService,
+    PouchDBService
+  ],
   bootstrap: [
     AppComponent
   ]
