@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <div class="toolbar-block">
+    <button mat-button class="toolbar-menu-item" (click)="onClickMenuItem('menu')">
+      <mat-icon svgIcon="menu"></mat-icon>
+    </button>
+    <span class="toolbar-title">{{ title }}</span>
+  </div>
+  <div class="flexbox"></div>
+  <div class="toolbar-block">
+    <button mat-button class="toolbar-menu-item right" [matMenuTriggerFor]="menu">
+      <mat-icon svgIcon="more_white"></mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onClickMenuItem('about')">
+        <mat-icon svgIcon="blank"></mat-icon>
+        <span>About</span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
