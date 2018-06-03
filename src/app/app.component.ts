@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MatSnackBar, MatSnackBarConfig} from '@angular/material';
 import {SnackbarService} from './services/snackbar.service';
+import {PouchDBService} from './services/pouchdb.service';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,14 @@ import {SnackbarService} from './services/snackbar.service';
 export class AppComponent {
 
   constructor(public snackBar: MatSnackBar,
+              private pouchDBService: PouchDBService,
               private snackbarService: SnackbarService) {
+    this.pouchDBService.sync('http://localhost:5984/amphibian');
     this.snackbarService.messageSubject.subscribe(snack => {
         this.openSnackBar(snack[0], snack[1]);
       }
     );
+
   }
 
   /**

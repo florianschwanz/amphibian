@@ -20,11 +20,13 @@ import {AboutDialogComponent} from './view/dialogs/app-info/about-dialog/about-d
 import {AppRoutingModule} from './app-routing.module';
 import {SplashScreenComponent} from './view/pages/splash-screen/splash-screen.component';
 import {HomeComponent} from './view/pages/home/home.component';
+import { DatabaseComponent } from './view/pages/database/database.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutDialogComponent,
+    DatabaseComponent,
     HomeComponent,
     SplashScreenComponent,
     ToolbarComponent
@@ -48,8 +50,7 @@ import {HomeComponent} from './view/pages/home/home.component';
     SnackbarService
   ],
   bootstrap: [
-    AppComponent,
-    AboutDialogComponent
+    AppComponent
   ]
 })
 export class AppModule {

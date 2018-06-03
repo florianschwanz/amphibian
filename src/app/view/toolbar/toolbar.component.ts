@@ -19,6 +19,7 @@ export class ToolbarComponent implements OnInit {
               sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('menu', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-menu-24px.svg'));
     iconRegistry.addSvgIcon('more_white', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-more_vert-24px.svg'));
+    iconRegistry.addSvgIcon('save', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-save-24px.svg'));
     iconRegistry.addSvgIcon('blank', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/blank_24px.svg'));
   }
 
