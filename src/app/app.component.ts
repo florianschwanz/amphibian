@@ -8,7 +8,6 @@ import {SnackbarService} from './services/snackbar.service';
   styles: [require('./app.component.scss')],
 })
 export class AppComponent {
-  title = 'Amphibian';
 
   constructor(public snackBar: MatSnackBar,
               private snackbarService: SnackbarService) {

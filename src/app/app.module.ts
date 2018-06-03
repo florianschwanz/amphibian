@@ -17,16 +17,20 @@ import {SnackbarService} from './services/snackbar.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AboutDialogComponent} from './view/dialogs/app-info/about-dialog/about-dialog.component';
-import {PrimaryComponent} from './view/pages/primary/primary.component';
+import {AppRoutingModule} from './app-routing.module';
+import {SplashScreenComponent} from './view/pages/splash-screen/splash-screen.component';
+import {HomeComponent} from './view/pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutDialogComponent,
-    PrimaryComponent,
+    HomeComponent,
+    SplashScreenComponent,
     ToolbarComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,

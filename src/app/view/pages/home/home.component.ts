@@ -4,11 +4,11 @@ import {PlatformService} from '../../../services/platform.service';
 
 @Component({
   selector: 'app-primary',
-  templateUrl: './primary.component.html',
-  styleUrls: ['./primary.component.scss']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class PrimaryComponent implements OnInit {
-  @Input() title = '';
+export class HomeComponent implements OnInit {
+  title = 'Amphibian';
   operatingSystem = '';
 
   constructor(private platformService: PlatformService) {
