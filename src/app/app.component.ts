@@ -1,6 +1,6 @@
-import {Component} from "@angular/core";
-import {PlatformService} from "./services/platform.service";
-import {OperatingSystem} from "./model/operating-system";
+import {Component} from '@angular/core';
+import {MatSnackBar, MatSnackBarConfig} from '@angular/material';
+import {SnackbarService} from './services/snackbar.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,23 @@ import {OperatingSystem} from "./model/operating-system";
 })
 export class AppComponent {
   title = 'Amphibian';
-  operatingSystem = '';
 
-  constructor(platformService: PlatformService) {
-    this.operatingSystem = `${OperatingSystem[platformService.operatingSystem]}`;
+  constructor(public snackBar: MatSnackBar,
+              private snackbarService: SnackbarService) {
+    this.snackbarService.messageSubject.subscribe(snack => {
+        this.openSnackBar(snack[0], snack[1]);
+      }
+    );
+  }
+
+  /**
+   * Handles messages that shall be displayed in a snack bar
+   * @param message
+   * @param action
+   */
+  private openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, <MatSnackBarConfig>{
+      duration: 5000,
+    });
   }
 }

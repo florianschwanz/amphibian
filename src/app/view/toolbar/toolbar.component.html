@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <div class="toolbar-block">
-    <button mat-button class="toolbar-menu-item" (click)="onClickMenuItem('menu')">
+    <button mat-button class="toolbar-menu-item" (click)="onMenuItemClicked('menu')">
       <mat-icon svgIcon="menu"></mat-icon>
     </button>
     <span class="toolbar-title">{{ title }}</span>
@@ -11,7 +11,7 @@
       <mat-icon svgIcon="more_white"></mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="onClickMenuItem('about')">
+      <button mat-menu-item (click)="onMenuItemClicked('about')">
         <mat-icon svgIcon="blank"></mat-icon>
         <span>About</span>
       </button>
