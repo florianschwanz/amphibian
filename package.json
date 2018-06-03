@@ -1,7 +1,8 @@
 {
   "name": "amphibian",
   "version": "0.0.0",
-  "license": "GPLv3",
+  "license": "AGPL",
+  "homepage": "https://github.com/florianschwanz/amphibian",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",

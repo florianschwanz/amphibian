@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {OperatingSystem} from '../../model/operating-system';
-import {PlatformService} from '../../services/platform.service';
+import {OperatingSystem} from '../../../model/operating-system';
+import {PlatformService} from '../../../services/platform.service';
 
 @Component({
   selector: 'app-primary',

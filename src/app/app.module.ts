@@ -3,26 +3,35 @@ import {BrowserModule} from '@angular/platform-browser';
 import {PlatformService} from './services/platform.service';
 import {NgModule} from '@angular/core';
 import {ToolbarComponent} from './view/toolbar/toolbar.component';
-import {MatButtonModule, MatIconModule, MatMenuModule, MatSnackBarModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatIconModule,
+  MatMenuModule,
+  MatSnackBarModule,
+  MatToolbarModule
+} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 import {PouchDBService} from './services/pouchdb.service';
 import {SnackbarService} from './services/snackbar.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HttpModule} from '@angular/http';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { PrimaryComponent } from './view/primary/primary.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {AboutDialogComponent} from './view/dialogs/app-info/about-dialog/about-dialog.component';
+import {PrimaryComponent} from './view/pages/primary/primary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
-    PrimaryComponent
+    AboutDialogComponent,
+    PrimaryComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatButtonModule,
+    MatDialogModule,
     MatIconModule,
     MatMenuModule,
     MatSnackBarModule,
@@ -35,7 +44,8 @@ import { PrimaryComponent } from './view/primary/primary.component';
     SnackbarService
   ],
   bootstrap: [
-    AppComponent
+    AppComponent,
+    AboutDialogComponent
   ]
 })
 export class AppModule {
