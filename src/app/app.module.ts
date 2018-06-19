@@ -20,7 +20,7 @@ import {AboutDialogComponent} from './view/dialogs/app-info/about-dialog/about-d
 import {AppRoutingModule} from './app-routing.module';
 import {SplashScreenComponent} from './view/pages/splash-screen/splash-screen.component';
 import {HomeComponent} from './view/pages/home/home.component';
-import { DatabaseComponent } from './view/pages/database/database.component';
+import {DatabaseComponent} from './view/pages/database/database.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +48,9 @@ import { DatabaseComponent } from './view/pages/database/database.component';
     PlatformService,
     PouchDBService,
     SnackbarService
+  ],
+  entryComponents: [
+    AboutDialogComponent
   ],
   bootstrap: [
     AppComponent
