@@ -12,8 +12,7 @@ export class HomeComponent implements OnInit {
   title = 'Amphibian';
   operatingSystem = '';
 
-  constructor(private platformService: PlatformService,
-              private pouchDBService: PouchDBService) {
+  constructor(private platformService: PlatformService) {
     this.operatingSystem = `${OperatingSystem[platformService.operatingSystem]}`;
   }
 
