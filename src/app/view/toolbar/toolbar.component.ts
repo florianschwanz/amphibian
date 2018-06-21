@@ -10,20 +10,11 @@ import {environment} from '../../../environments/environment.prod';
   templateUrl: './toolbar.component.html',
   styles: [require('./toolbar.component.scss')]
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent {
   @Input() title;
 
   constructor(private snackbarService: SnackbarService,
-              public dialog: MatDialog,
-              iconRegistry: MatIconRegistry,
-              sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon('menu', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-menu-24px.svg'));
-    iconRegistry.addSvgIcon('more_white', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-more_vert-24px.svg'));
-    iconRegistry.addSvgIcon('save', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/baseline-save-24px.svg'));
-    iconRegistry.addSvgIcon('blank', sanitizer.bypassSecurityTrustResourceUrl('assets/icons/blank_24px.svg'));
-  }
-
-  ngOnInit() {
+              public dialog: MatDialog) {
   }
 
   /**

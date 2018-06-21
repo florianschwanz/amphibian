@@ -8,10 +8,10 @@
   <div class="flexbox"></div>
   <div class="toolbar-block">
     <button mat-button class="toolbar-menu-item right" [matMenuTriggerFor]="menu">
-      <mat-icon svgIcon="more_white"></mat-icon>
+      <mat-icon svgIcon="more_vert" class="icon-white"></mat-icon>
     </button>
     <button mat-button class="toolbar-menu-item right" [routerLink]="['/database']">
-      <mat-icon svgIcon="save"></mat-icon>
+      <mat-icon svgIcon="save" class="icon-white"></mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="onMenuItemClicked('about')">

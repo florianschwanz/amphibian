@@ -26,9 +26,13 @@ mat-toolbar {
     width: 10%;
   }
   @media #{$mat-medium} {
-    width: 100px;
+    width: 100%;
   }
   @media #{$mat-large} {
-    width: 400px;
+    width: 100%;
   }
+}
+
+.icon-white {
+  fill: white;
 }
