@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {OperatingSystem} from "../model/operating-system";
+import {OperatingSystem} from "../model/operating-system.enum";
 
 @Injectable()
 export class PlatformService {
