@@ -1,31 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="1" id="de.interoberlin.amphibian" version="1.0.0">
-    <name>Amphibian</name>
-    <description>
+  <name>Amphibian</name>
+  <description>
     A sample Apache Cordova application
   </description>
-    <author email="florian.schwanz@interoberlin.de" href="https://interoberlin.de">
+  <author email="florian.schwanz@interoberlin.de" href="https://interoberlin.de">
     Interoberlin
   </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <hook src="scripts/prepare-app.js" type="before_prepare" />
-    <preference name="SplashShowOnlyFirstTime" value="false" />
-    <preference name="ShowSplashScreenSpinner" value="false" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
-    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
-    <engine name="android" spec="^7.0.0" />
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <hook src="scripts/prepare-app.js" type="before_prepare"/>
+  <preference name="SplashShowOnlyFirstTime" value="false"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <icon density="xxhdpi" src="www/assets/logos/logo-144x144.png"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+  <plugin name="cordova-plugin-splashscreen" spec="^4.0.3"/>
+  <plugin name="cordova-plugin-whitelist" spec="^1.3.2"/>
+  <engine name="android" spec="^7.0.0"/>
 </widget>
