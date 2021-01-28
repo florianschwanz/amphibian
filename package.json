@@ -73,7 +73,7 @@
     "codelyzer": "~4.2.1",
     "copyfiles": "^2.0.0",
     "cordova": "^8.0.0",
-    "electron": "^2.0.2",
+    "electron": "^9.4.0",
     "electron-packager": "^12.1.0",
     "git": "^0.1.5",
     "jasmine-core": "~2.99.1",
